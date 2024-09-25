@@ -1,3 +1,5 @@
+
+
 function calculate(price, money,parent) {
     const number = /\d/;
     const string = /[a-zA-Z]/;

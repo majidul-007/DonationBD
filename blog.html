@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +23,12 @@
 
 </head>
 
-<body class="lexend">
-    <header class="bg-gradient-to-t pt-0 mt-0 bg-yellow-200 sticky top-0 z-10">
-        <nav class="navbar max-w-screen-xl bg-yellow-200 justify-between mx-auto  mt-0">
+<body class="lexend bg-blue-300 min-h-screen p-2 md:p-0">
+    <header class=" pt-0 mt-0  bg-blue-300 sticky top-0 z-10">
+        <nav class="navbar  max-w-screen-xl  bg-blue-300 justify-evenly mx-auto  mt-0">
 
             <div class="navbar-start">
-                <a href="index.html" class="btn btn-ghost text-base md:text-xl">Home</a>
+                <a href="index.html" class="btn btn-ghost  md:text-xl text-white text-xl bg-yellow-500">Home</a>
             </div>
 
 
@@ -36,15 +36,15 @@
 
             <div class="navbar-center flex gap-2 items-center">
 
-                <img class="w-7" src="/assets/logo.png" alt="">
-                <h1 class="font-semibold text-base md:text-xl">Donatebangla</h1>
+                <img class="w-7" src="./assets/logo.png" alt="">
+                <h1 class="font-semibold text-base md:text-xl text-white">Donate4bangla</h1>
 
 
             </div>
-            <div class="navbar-end forced-colors:[#973737] ">
+            <div class="navbar-end flex gap-1 ">
 
                 <img class="" src="/assets/coin.png" alt="">
-                <h1 id="total-Account" class=" text-base md:text-xl flex gap-2">5999.00
+                <h1 id="total-Account" class=" text-base md:text-xl flex gap-2 text-white">5999.00
                 </h1>
             </div>
 
@@ -55,10 +55,10 @@
 
 
     <main class="">
-        <section class="p-4 mt-20 max-w-screen-xl flex flex-col gap-4 justify-between mx-auto  mt-10">
+        <section class="p-6 bg-orange-300 border rounded-lg mt-20 max-w-screen-xl flex flex-col gap-4 justify-between mx-auto ">
             <h1 class="font-extrabold text-4xl">Important FAQ</h1>
 
-            <div>
+            <div class="border-2  ">
                 <div class="collapse collapse-arrow bg-base-200 border-b-2 border-slate-300 rounded-none p-3">
                     <input type="radio" name="my-accordion-2" checked="checked" />
                     <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
@@ -73,25 +73,34 @@
                         <p>The Selectors API provides methods that make it quick and easy to retrieve Element nodes from the DOM by matching against a set of selectors. This is much faster than past techniques, wherein it was necessary to, for example, use a loop in JavaScript code to locate the specific items you needed to find.</p>
                     </div>
                 </div>
-                <div class="collapse collapse-arrow bg-base-200 border-b-2 border-slate-300 rounded-none rounded-none p-3">
+                <div
+                    class="collapse collapse-arrow bg-base-200 border-b-2 border-slate-300  rounded-none p-3">
                     <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the DOM,
-                        and why is it useful?</div>
+                    <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the
+                        DOM,and why is it useful?</div>
                     <div class="collapse-content">
-                        <p>In the context of the DOM (Document Object Model), event delegation is a technique where you attach a single event listener to a parent element, allowing it to capture events triggered on any of its child elements, instead of attaching separate listeners to each child element; this is useful because it significantly improves performance by reducing the number of event listeners needed, especially when dealing with large or dynamically generated lists of elements</p>
+                        <p>In the context of the DOM (Document Object Model), event delegation is a technique where you attach a single event listener to a parent element, allowing it to capture events triggered on any of its child elements, instead of attaching separate listeners to each child element; this is useful because it significantly improves performance by reducing the number of event listeners needed, especially when dealing with large or dynamically generated lists of elements
+                        </p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow bg-base-200 border-b-2 border-slate-300 rounded-none p-3">
                     <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and
+                        styles
+                        using the DOM?</div>
                     <div class="collapse-content">
                         <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
                     </div>
                 </div>
             </div>
+
         </section>
+
+
+
     </main>
-    <script src="/javascript/index.js"></script>
+
+    <script src="index.js"></script>
 
 </body>
 
